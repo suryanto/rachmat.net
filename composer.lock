@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "b8f41ae772073015ab3151992345213f",
-    "content-hash": "cc3ec7f8428f46bd0e54c85be347977e",
+    "hash": "b840a5954f39b90ef3ca9350200434e5",
+    "content-hash": "eb40ae3535384526f83d680c0fff58b9",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -1135,6 +1135,59 @@
             "time": "2016-02-04 01:39:10"
         },
         {
+            "name": "drupal/metatag",
+            "version": "8.1.0-beta9",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/metatag",
+                "reference": "1a62e1e051462cb2ddabf4db35a8fef5c69b9c5c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/metatag-8.x-1.0-beta9.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "drupal/core": "8.*",
+                "drupal/field": "8.*",
+                "drupal/token": "8.*"
+            },
+            "replace": {
+                "drupal/metatag_google_plus": "self.version",
+                "drupal/metatag_open_graph": "self.version",
+                "drupal/metatag_twitter_cards": "self.version",
+                "drupal/metatag_verification": "self.version"
+            },
+            "suggest": {
+                "drupal/core": "Required by drupal/metatag_google_plus, drupal/metatag_open_graph, drupal/metatag_twitter_cards, drupal/metatag_verification"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-8.x-1.x": "8.1.x-dev"
+                }
+            },
+            "notification-url": "https://packagist.drupal-composer.org/downloads/",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "See contributors",
+                    "homepage": "https://www.drupal.org/node/640498/committers",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Manage meta tags for all entities.",
+            "homepage": "https://www.drupal.org/project/metatag",
+            "keywords": [
+                "php",
+                "seo"
+            ],
+            "time": "2016-06-02 19:37:25"
+        },
+        {
             "name": "drupal/mollom",
             "version": "8.1.1",
             "source": {
@@ -1316,7 +1369,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://ftp.drupal.org/files/projects/xmlsitemap-8.x-1.0-alpha2.zip",
-                "reference": null,
+                "reference": "94b9d51597c2152d06357aba7a5eb5aa7498608d",
                 "shasum": null
             },
             "require": {
