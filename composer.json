@@ -29,7 +29,9 @@
         "drupal/writer": "8.*",
         "drupal/disqus": "8.*",
         "drupal/token": "8.*",
-        "drupal/pathauto": "8.*"
+        "drupal/pathauto": "8.*",
+        "drupal/mollom": "8.*",
+        "drupal/xmlsitemap": "8.*"
     },
     "require-dev": {
        "behat/mink": "~1.7",
