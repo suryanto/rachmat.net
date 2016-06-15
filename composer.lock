@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "b840a5954f39b90ef3ca9350200434e5",
-    "content-hash": "eb40ae3535384526f83d680c0fff58b9",
+    "hash": "61b9cd35f0cc33cb74028a80a992b0ba",
+    "content-hash": "5e76a6d74dff0f45cc2f9fc90d642dd3",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -1104,6 +1104,47 @@
             "time": "2016-05-12 07:49:43"
         },
         {
+            "name": "drupal/google_analytics",
+            "version": "8.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/google_analytics",
+                "reference": "99802b6a9f7711d30838acaa1af9ce2cf5b4d614"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/google_analytics-8.x-2.0.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "drupal/core": "8.*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-8.x-2.x": "8.2.x-dev"
+                }
+            },
+            "notification-url": "https://packagist.drupal-composer.org/downloads/",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "hass",
+                    "homepage": "https://www.drupal.org/u/hass"
+                },
+                {
+                    "name": "See other contributors",
+                    "homepage": "https://www.drupal.org/node/49388/committers"
+                }
+            ],
+            "description": "Allows your site to be tracked by Google Analytics by adding a Javascript tracking code to every page.",
+            "homepage": "https://www.drupal.org/project/google_analytics",
+            "time": "2016-04-23 19:09:32"
+        },
+        {
             "name": "drupal/markdown",
             "version": "8.1.0",
             "source": {
@@ -1145,7 +1186,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://ftp.drupal.org/files/projects/metatag-8.x-1.0-beta9.zip",
-                "reference": null,
+                "reference": "1a62e1e051462cb2ddabf4db35a8fef5c69b9c5c",
                 "shasum": null
             },
             "require": {
@@ -1952,16 +1993,16 @@
         },
         {
             "name": "league/commonmark",
-            "version": "0.13.3",
+            "version": "0.13.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/thephpleague/commonmark.git",
-                "reference": "35816f39eb2498484fbb7b1495633a976ee1a8de"
+                "reference": "83f8210427fb01f671e272bb8d44b4ed3a94d459"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/thephpleague/commonmark/zipball/35816f39eb2498484fbb7b1495633a976ee1a8de",
-                "reference": "35816f39eb2498484fbb7b1495633a976ee1a8de",
+                "url": "https://api.github.com/repos/thephpleague/commonmark/zipball/83f8210427fb01f671e272bb8d44b4ed3a94d459",
+                "reference": "83f8210427fb01f671e272bb8d44b4ed3a94d459",
                 "shasum": ""
             },
             "require": {
@@ -2017,7 +2058,7 @@
                 "markdown",
                 "parser"
             ],
-            "time": "2016-05-21 18:41:30"
+            "time": "2016-06-14 14:49:29"
         },
         {
             "name": "masterminds/html5",
@@ -5961,7 +6002,7 @@
         },
         {
             "name": "symfony/browser-kit",
-            "version": "v3.1.0",
+            "version": "v3.1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/browser-kit.git",
