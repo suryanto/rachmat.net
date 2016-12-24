@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "816d95e7ac00520f01d0c9bf84965f24",
-    "content-hash": "5e1b22aede8f3f5f274aea89127722c4",
+    "hash": "ffea4a1e29afb655f7f83b0e50ccca39",
+    "content-hash": "a4bd9e7936ec9e00075dffc53eb1f167",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -939,7 +939,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://ftp.drupal.org/files/projects/admin_toolbar-8.x-1.18.zip",
-                "reference": null,
+                "reference": "8.x-1.18",
                 "shasum": "ea5b6b5eb20757fda12e7220819a750e2575359b"
             },
             "require": {
@@ -1292,36 +1292,67 @@
         },
         {
             "name": "drupal/disqus",
-            "version": "8.1.0-rc1",
+            "version": "1.0.0-rc3",
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/disqus",
-                "reference": "1128fef39914280431f7139f29add95957116248"
+                "reference": "8.x-1.0-rc3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/disqus-8.x-1.0-rc1.zip",
-                "reference": "1128fef39914280431f7139f29add95957116248",
-                "shasum": null
+                "url": "https://ftp.drupal.org/files/projects/disqus-8.x-1.0-rc3.zip",
+                "reference": "8.x-1.0-rc3",
+                "shasum": "896a8cc049dec6f417447fdea89b8fb8722c2bc3"
             },
             "require": {
                 "drexarj/disqus-php": "dev-master",
-                "drupal/core": "8.*",
-                "drupal/field": "8.*"
+                "drupal/core": "*"
             },
             "type": "drupal-module",
             "extra": {
                 "branch-alias": {
-                    "dev-8.x-1.x": "8.1.x-dev"
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.0-rc3",
+                    "datestamp": "1476615539"
                 }
             },
-            "notification-url": "https://packagist.drupal-composer.org/downloads/",
+            "notification-url": "https://packages.drupal.org/8/downloads",
             "license": [
                 "GPL-2.0+"
             ],
-            "description": "Uses the Disqus web service to enhance comments.",
-            "homepage": "https://www.drupal.org/project/disqus",
-            "time": "2016-05-12 07:49:43"
+            "authors": [
+                {
+                    "name": "JayeshSolanki",
+                    "homepage": "https://www.drupal.org/user/2832795"
+                },
+                {
+                    "name": "RobLoach",
+                    "homepage": "https://www.drupal.org/user/61114"
+                },
+                {
+                    "name": "bkosborne",
+                    "homepage": "https://www.drupal.org/user/788032"
+                },
+                {
+                    "name": "dawehner",
+                    "homepage": "https://www.drupal.org/user/99340"
+                },
+                {
+                    "name": "marcingy",
+                    "homepage": "https://www.drupal.org/user/77320"
+                },
+                {
+                    "name": "slashrsm",
+                    "homepage": "https://www.drupal.org/user/744628"
+                }
+            ],
+            "description": ".",
+            "homepage": "http://drupal.org/project/disqus",
+            "support": {
+                "source": "http://cgit.drupalcode.org/disqus"
+            }
         },
         {
             "name": "drupal/google_analytics",
@@ -1366,70 +1397,91 @@
         },
         {
             "name": "drupal/markdown",
-            "version": "8.1.0",
+            "version": "1.1.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/markdown",
-                "reference": "2709041c7bb2c01de6f3559d2c3eab4a52cb4788"
+                "reference": "8.x-1.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/markdown-8.x-1.0.zip",
-                "reference": "2709041c7bb2c01de6f3559d2c3eab4a52cb4788",
-                "shasum": null
+                "url": "https://ftp.drupal.org/files/projects/markdown-8.x-1.1.zip",
+                "reference": "8.x-1.1",
+                "shasum": "e8ff84b2fe8e552cc4dffbeac4f68079c15bba14"
             },
             "require": {
-                "drupal/core": "8.*"
+                "drupal/core": "~8.0",
+                "league/commonmark": "^0.15.0",
+                "michelf/php-markdown": "^1.6"
             },
             "type": "drupal-module",
             "extra": {
                 "branch-alias": {
-                    "dev-8.x-1.x": "8.1.x-dev"
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.1",
+                    "datestamp": "1475761139"
                 }
             },
-            "notification-url": "https://packagist.drupal-composer.org/downloads/",
+            "notification-url": "https://packages.drupal.org/8/downloads",
             "license": [
                 "GPL-2.0+"
             ],
+            "authors": [
+                {
+                    "name": "barraponto",
+                    "homepage": "https://www.drupal.org/user/511760"
+                },
+                {
+                    "name": "frjo",
+                    "homepage": "https://www.drupal.org/user/5546"
+                },
+                {
+                    "name": "justin2pin",
+                    "homepage": "https://www.drupal.org/user/278450"
+                },
+                {
+                    "name": "sreynen",
+                    "homepage": "https://www.drupal.org/user/109890"
+                }
+            ],
             "description": "Allows content to be submitted using Markdown, a simple plain-text syntax that is transformed into valid HTML.",
-            "homepage": "http://drupal.org/project/markdown",
-            "time": "2016-02-04 01:39:10"
+            "homepage": "https://www.drupal.org/project/markdown",
+            "support": {
+                "source": "https://cgit.drupalcode.org/markdown",
+                "issues": "https://www.drupal.org/project/markdown"
+            }
         },
         {
             "name": "drupal/metatag",
-            "version": "8.1.0-beta10",
+            "version": "1.0.0-beta11",
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/metatag",
-                "reference": "c0610ad2ad9318298823c24db66b8769095910a3"
+                "reference": "8.x-1.0-beta11"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/metatag-8.x-1.0-beta10.zip",
-                "reference": "c0610ad2ad9318298823c24db66b8769095910a3",
-                "shasum": null
+                "url": "https://ftp.drupal.org/files/projects/metatag-8.x-1.0-beta11.zip",
+                "reference": "8.x-1.0-beta11",
+                "shasum": "d73fb7ba41833bd8ccb9a661aafc47258b4c7e18"
             },
             "require": {
-                "drupal/core": "8.*",
-                "drupal/field": "8.*",
-                "drupal/token": "8.*"
-            },
-            "replace": {
-                "drupal/metatag_google_plus": "self.version",
-                "drupal/metatag_open_graph": "self.version",
-                "drupal/metatag_twitter_cards": "self.version",
-                "drupal/metatag_verification": "self.version"
-            },
-            "suggest": {
-                "drupal/core": "Required by drupal/metatag_google_plus, drupal/metatag_open_graph, drupal/metatag_twitter_cards, drupal/metatag_verification"
+                "drupal/core": "*",
+                "drupal/token": "*"
             },
             "type": "drupal-module",
             "extra": {
                 "branch-alias": {
-                    "dev-8.x-1.x": "8.1.x-dev"
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.0-beta11",
+                    "datestamp": "1478265227"
                 }
             },
-            "notification-url": "https://packagist.drupal-composer.org/downloads/",
+            "notification-url": "https://packages.drupal.org/8/downloads",
             "license": [
                 "GPL-2.0+"
             ],
@@ -1438,6 +1490,10 @@
                     "name": "See contributors",
                     "homepage": "https://www.drupal.org/node/640498/committers",
                     "role": "Developer"
+                },
+                {
+                    "name": "Dave Reid",
+                    "homepage": "https://www.drupal.org/user/53892"
                 }
             ],
             "description": "Manage meta tags for all entities.",
@@ -1446,7 +1502,10 @@
                 "php",
                 "seo"
             ],
-            "time": "2016-08-22 17:45:58"
+            "support": {
+                "source": "http://cgit.drupalcode.org/metatag",
+                "issues": "http://drupal.org/project/issues/metatag"
+            }
         },
         {
             "name": "drupal/mollom",
@@ -1494,37 +1553,60 @@
         },
         {
             "name": "drupal/pathauto",
-            "version": "8.1.0-alpha3",
+            "version": "1.0.0-beta1",
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/pathauto",
-                "reference": "c4952e15e2906ff2040bc01f5e8f37d23950269e"
+                "reference": "8.x-1.0-beta1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/pathauto-8.x-1.0-alpha3.zip",
-                "reference": "c4952e15e2906ff2040bc01f5e8f37d23950269e",
-                "shasum": null
+                "url": "https://ftp.drupal.org/files/projects/pathauto-8.x-1.0-beta1.zip",
+                "reference": "8.x-1.0-beta1",
+                "shasum": "0c8756d73d5b1f95419921926e8e55bc0c69e41b"
             },
             "require": {
-                "drupal/core": "8.*",
-                "drupal/ctools": "~8.3.0-alpha21",
-                "drupal/path": "8.*",
-                "drupal/token": "~8.1.0-alpha2"
+                "drupal/core": "*",
+                "drupal/ctools": "*",
+                "drupal/token": "*"
             },
             "type": "drupal-module",
             "extra": {
                 "branch-alias": {
-                    "dev-8.x-1.x": "8.1.x-dev"
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.0-beta1",
+                    "datestamp": "1474313339"
                 }
             },
-            "notification-url": "https://packagist.drupal-composer.org/downloads/",
+            "notification-url": "https://packages.drupal.org/8/downloads",
             "license": [
                 "GPL-2.0+"
             ],
+            "authors": [
+                {
+                    "name": "Berdir",
+                    "homepage": "https://www.drupal.org/user/214652"
+                },
+                {
+                    "name": "Dave Reid",
+                    "homepage": "https://www.drupal.org/user/53892"
+                },
+                {
+                    "name": "Freso",
+                    "homepage": "https://www.drupal.org/user/27504"
+                },
+                {
+                    "name": "greggles",
+                    "homepage": "https://www.drupal.org/user/36762"
+                }
+            ],
             "description": "Provides a mechanism for modules to automatically generate aliases for the content they manage.",
             "homepage": "https://www.drupal.org/project/pathauto",
-            "time": "2016-04-18 18:44:27"
+            "support": {
+                "source": "http://cgit.drupalcode.org/pathauto"
+            }
         },
         {
             "name": "drupal/quran",
@@ -1559,34 +1641,67 @@
         },
         {
             "name": "drupal/token",
-            "version": "8.1.0-beta1",
+            "version": "1.0.0-beta2",
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/token",
-                "reference": "1c68e82525fda1bd12021502da81b929b9ae5c02"
+                "reference": "8.x-1.0-beta2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/token-8.x-1.0-beta1.zip",
-                "reference": "1c68e82525fda1bd12021502da81b929b9ae5c02",
-                "shasum": null
+                "url": "https://ftp.drupal.org/files/projects/token-8.x-1.0-beta2.zip",
+                "reference": null,
+                "shasum": "b838318eddf46e4f382489de5516ab916257c393"
             },
             "require": {
-                "drupal/core": "8.*"
+                "drupal/core": "~8.0"
             },
             "type": "drupal-module",
             "extra": {
                 "branch-alias": {
-                    "dev-8.x-1.x": "8.1.x-dev"
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.0-beta2",
+                    "datestamp": "1474367039"
                 }
             },
-            "notification-url": "https://packagist.drupal-composer.org/downloads/",
+            "notification-url": "https://packages.drupal.org/8/downloads",
             "license": [
                 "GPL-2.0+"
             ],
+            "authors": [
+                {
+                    "name": "Berdir",
+                    "homepage": "https://www.drupal.org/user/214652"
+                },
+                {
+                    "name": "Dave Reid",
+                    "homepage": "https://www.drupal.org/user/53892"
+                },
+                {
+                    "name": "eaton",
+                    "homepage": "https://www.drupal.org/user/16496"
+                },
+                {
+                    "name": "fago",
+                    "homepage": "https://www.drupal.org/user/16747"
+                },
+                {
+                    "name": "greggles",
+                    "homepage": "https://www.drupal.org/user/36762"
+                },
+                {
+                    "name": "mikeryan",
+                    "homepage": "https://www.drupal.org/user/4420"
+                }
+            ],
             "description": "Provides a user interface for the Token API and some missing core tokens.",
             "homepage": "https://www.drupal.org/project/token",
-            "time": "2016-08-09 07:03:16"
+            "support": {
+                "source": "http://cgit.drupalcode.org/token",
+                "issues": "https://www.drupal.org/project/issues/token"
+            }
         },
         {
             "name": "drupal/writer",
@@ -2219,16 +2334,16 @@
         },
         {
             "name": "league/commonmark",
-            "version": "0.13.4",
+            "version": "0.15.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/thephpleague/commonmark.git",
-                "reference": "83f8210427fb01f671e272bb8d44b4ed3a94d459"
+                "reference": "c8b43ee5821362216f8e9ac684f0f59de164edcc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/thephpleague/commonmark/zipball/83f8210427fb01f671e272bb8d44b4ed3a94d459",
-                "reference": "83f8210427fb01f671e272bb8d44b4ed3a94d459",
+                "url": "https://api.github.com/repos/thephpleague/commonmark/zipball/c8b43ee5821362216f8e9ac684f0f59de164edcc",
+                "reference": "c8b43ee5821362216f8e9ac684f0f59de164edcc",
                 "shasum": ""
             },
             "require": {
@@ -2241,7 +2356,7 @@
             "require-dev": {
                 "cebe/markdown": "~1.0",
                 "erusev/parsedown": "~1.0",
-                "jgm/commonmark": "0.25",
+                "jgm/commonmark": "0.27",
                 "michelf/php-markdown": "~1.4",
                 "mikehaertl/php-shellcommand": "~1.2.0",
                 "phpunit/phpunit": "~4.3|~5.0",
@@ -2257,7 +2372,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "0.14-dev"
+                    "dev-master": "0.16-dev"
                 }
             },
             "autoload": {
@@ -2284,7 +2399,7 @@
                 "markdown",
                 "parser"
             ],
-            "time": "2016-06-14 14:49:29"
+            "time": "2016-12-19 00:11:43"
         },
         {
             "name": "masterminds/html5",
@@ -4645,16 +4760,16 @@
         },
         {
             "name": "twig/twig",
-            "version": "v1.29.0",
+            "version": "v1.30.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/twigphp/Twig.git",
-                "reference": "74f723e542368ca2080b252740be5f1113ebb898"
+                "reference": "c6ff71094fde15d12398eaba029434b013dc5e59"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/twigphp/Twig/zipball/74f723e542368ca2080b252740be5f1113ebb898",
-                "reference": "74f723e542368ca2080b252740be5f1113ebb898",
+                "url": "https://api.github.com/repos/twigphp/Twig/zipball/c6ff71094fde15d12398eaba029434b013dc5e59",
+                "reference": "c6ff71094fde15d12398eaba029434b013dc5e59",
                 "shasum": ""
             },
             "require": {
@@ -4667,7 +4782,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.29-dev"
+                    "dev-master": "1.30-dev"
                 }
             },
             "autoload": {
@@ -4702,7 +4817,7 @@
             "keywords": [
                 "templating"
             ],
-            "time": "2016-12-13 17:28:18"
+            "time": "2016-12-23 11:06:22"
         },
         {
             "name": "victorjonsson/markdowndocs",
@@ -6345,7 +6460,12 @@
     ],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": [],
+    "stability-flags": {
+        "drupal/disqus": 5,
+        "drupal/token": 10,
+        "drupal/pathauto": 10,
+        "drupal/metatag": 10
+    },
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": [],
