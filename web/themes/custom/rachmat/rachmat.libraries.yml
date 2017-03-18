@@ -1,0 +1,12 @@
+global-styling:
+  version: 1.x
+  css:
+    theme:
+      css/style.css: {}
+  js:
+    bower_components/foundation-sites/dist/js/foundation.min.js: {}
+    bower_components/jquery.stellar/jquery.stellar.min.js: {}
+    js/script.js: {}
+  dependencies:
+    - core/jquery
+    

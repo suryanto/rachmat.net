@@ -1,0 +1,214 @@
+@charset 'utf-8';
+
+@import 'settings';
+@import 'foundation';
+@import 'motion-ui';
+
+@include foundation-global-styles;
+@include foundation-grid;
+//@include foundation-flex-grid;
+@include foundation-typography;
+@include foundation-button;
+@include foundation-forms;
+// @include foundation-range-input;
+@include foundation-accordion;
+@include foundation-accordion-menu;
+@include foundation-badge;
+@include foundation-breadcrumbs;
+@include foundation-button-group;
+@include foundation-callout;
+@include foundation-close-button;
+@include foundation-menu;
+@include foundation-menu-icon;
+@include foundation-drilldown-menu;
+@include foundation-dropdown;
+@include foundation-dropdown-menu;
+@include foundation-flex-video;
+@include foundation-label;
+@include foundation-media-object;
+@include foundation-off-canvas;
+@include foundation-orbit;
+@include foundation-pagination;
+@include foundation-progress-bar;
+// @include foundation-progress-element;
+// @include foundation-meter-element;
+@include foundation-slider;
+@include foundation-sticky;
+@include foundation-reveal;
+@include foundation-switch;
+@include foundation-table;
+@include foundation-tabs;
+@include foundation-thumbnail;
+@include foundation-title-bar;
+@include foundation-tooltip;
+@include foundation-top-bar;
+@include foundation-visibility-classes;
+@include foundation-float-classes;
+//@include foundation-flex-classes;
+
+@include motion-ui-transitions;
+@include motion-ui-animations;
+
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700');
+
+html, body, #main-canvas-wrapper, #main-canvas {
+    height: 100%;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+}
+
+.cover {
+  background: url(../images/main-cover2.jpg) no-repeat center top;
+  background-size: cover;
+  height: 100vh;
+  min-height: 700px;
+}
+
+.cover-overlay {
+    height: inherit;
+    background: rgba(69,127,202,0.9);
+    background: linear-gradient(to left, rgba(0, 92, 151, 0.9) 0%, rgba(54, 54, 149, 0.9) 100%);
+}
+
+header {
+  h1 {
+    margin-top: 6.25rem;
+    color: #FFFFFF;
+    font-weight: 600;
+  }
+  h2 {
+    color: #fff;
+    font-size: 30px;
+    padding-bottom: 20px;
+  }
+  p {
+    font-size: 20px;
+    color: #fff;
+  }
+}
+
+.button.ghost {
+	margin-bottom: 0;
+	background-color: transparent;
+	border: 1px solid #34495e;
+	border-radius: 5px;
+	padding:0.5rem 1.5rem;
+	transition: all 0.3 ease-out;
+	color: #34495e;
+  font-size: 20px;
+  margin: 20px 0;
+  text-transform: uppercase;
+  &:hover{
+		background-color:#34495e;
+		color: #fff;
+		transition: 0.2 ease;
+	}
+}
+.cover {
+  .button.ghost {
+    border: 1px solid #fff;
+    color: #fff;
+    &:hover{
+  		background-color:#fff;
+  		color: #34495e;
+  	}
+  }
+}
+
+.site-main-menu {
+  background: #000;
+  a {
+    color: #fff;
+  }
+}
+
+.no-js {
+  @include breakpoint(small only) {
+    .top-bar {
+      display: none;
+    }
+  }
+
+  @include breakpoint(medium) {
+    .title-bar {
+      display: none;
+    }
+  }
+}
+
+.bottom-anchor {
+  z-index: 5;
+  position: absolute;
+  left: 0;
+  bottom: 30px;
+  width: 100%;
+  .fa {
+    color: #fff;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 40px;
+    display: inline-block;
+  }
+}
+
+#homepage-content {
+  background-color: #ebebeb;
+  padding: 100px 0;
+  h2 {
+    font-size: 30px;
+    color: #1a272e;
+    margin-bottom: 30px;
+  }
+}
+
+ul.menu.dropdown {
+  li {
+    display: inline-block;
+    line-height: 30px;
+    margin-left: 20px;
+  }
+  a {
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+    padding: 0;
+    font-size: 18px;
+  }
+  a.is-active {
+    color: #bebebe;
+    &:before,
+    &:after {
+      width: 50%;
+      transition: none;
+    }
+  }
+  a:before, a:after {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: -7px;
+    width: 0;
+    height: 1px;
+    transition: all .2s ease-out;
+    background-color: #fff;
+  }
+  a:before {
+    left: 50%;
+  }
+  a:after {
+    right: 50%;
+  }
+  a:hover:before {
+    left: 0;
+    width: 50%;
+  }
+  a:hover:after {
+    right: 0;
+    width: 50%;
+  }
+}

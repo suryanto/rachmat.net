@@ -1,0 +1,29 @@
+<?php
+
+use Drupal\Core\Form\FormStateInterface;
+
+function rachmat_preprocess_menu_local_task(&$variables) {
+  $variables['element']['#link']['url']->setOption('attributes', array('class' => array('nav-link')));
+}
+
+function rachmat_preprocess_links(&$variables) {
+  if (isset($variables['links']['node-readmore'])) {
+    $variables['links']['node-readmore']['link']['#options']['attributes']['class'][] = 'btn btn-secondary';
+  }
+
+  if (isset($variables['links']['comment-add'])) {
+    $variables['links']['comment-add']['link']['#options']['attributes']['class'][] = 'btn btn-secondary';
+  }
+
+}
+
+function rachmat_preprocess_node(&$variables) {
+  $node = $variables['node'];
+  if ($node->getType() == 'event') {
+    $date = strtotime($node->field_event_date->value);
+    $variables['event_date'] = date('Y-m-d', $date);
+    $variables['event_year'] = date('Y', $date);
+    $variables['event_month'] = date('M', $date);
+    $variables['event_day'] = date('j', $date);
+  }
+}
