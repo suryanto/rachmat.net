@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "bea00e812c53b4022f164e171dbe56da",
+    "content-hash": "22c3847389fee2408e701f770ce7a6c9",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -1412,7 +1412,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://ftp.drupal.org/files/projects/entity_reference_revisions-8.x-1.2.zip",
-                "reference": null,
+                "reference": "8.x-1.2",
                 "shasum": "15261a4237cc2a743522a7bd81e9f34e01d12843"
             },
             "require": {
@@ -1565,7 +1565,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://ftp.drupal.org/files/projects/metatag-8.x-1.0.zip",
-                "reference": null,
+                "reference": "8.x-1.0",
                 "shasum": "604e45e89c19f5a8960b6a8ae3d80500d4328e6b"
             },
             "require": {
@@ -1614,30 +1614,34 @@
         },
         {
             "name": "drupal/mollom",
-            "version": "8.1.1",
+            "version": "1.2.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/mollom",
-                "reference": "3b5577be29c58c374a1ef592e75ff580200d4a00"
+                "reference": "8.x-1.2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/mollom-8.x-1.1.zip",
-                "reference": "3b5577be29c58c374a1ef592e75ff580200d4a00",
-                "shasum": null
+                "url": "https://ftp.drupal.org/files/projects/mollom-8.x-1.2.zip",
+                "reference": "8.x-1.2",
+                "shasum": "57e138baeaa7d2f1931be684be85d560ff37a790"
             },
             "require": {
-                "drupal/core": "8.*",
+                "drupal/core": "~8.0",
                 "mollom/client": "dev-psr4",
                 "php": ">=5.3.0"
             },
             "type": "drupal-module",
             "extra": {
                 "branch-alias": {
-                    "dev-8.x-1.x": "8.1.x-dev"
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.2",
+                    "datestamp": "1483560543"
                 }
             },
-            "notification-url": "https://packagist.drupal-composer.org/downloads/",
+            "notification-url": "https://packages.drupal.org/8/downloads",
             "license": [
                 "GPLv2"
             ],
@@ -1645,16 +1649,50 @@
                 {
                     "name": "See contributors",
                     "homepage": "https://drupal.org/project/mollom"
+                },
+                {
+                    "name": "Dave Reid",
+                    "homepage": "https://www.drupal.org/user/53892"
+                },
+                {
+                    "name": "Dries",
+                    "homepage": "https://www.drupal.org/user/1"
+                },
+                {
+                    "name": "Nick_vh",
+                    "homepage": "https://www.drupal.org/user/122682"
+                },
+                {
+                    "name": "Wim Leers",
+                    "homepage": "https://www.drupal.org/user/99777"
+                },
+                {
+                    "name": "blackskad",
+                    "homepage": "https://www.drupal.org/user/878346"
+                },
+                {
+                    "name": "cbarton281",
+                    "homepage": "https://www.drupal.org/user/3061395"
+                },
+                {
+                    "name": "eshta",
+                    "homepage": "https://www.drupal.org/user/1951462"
+                },
+                {
+                    "name": "sun",
+                    "homepage": "https://www.drupal.org/user/54136"
                 }
             ],
-            "description": "Automatically moderates user-submitted content and protects your site from spam and profanity.",
+            "description": "Mollom drupal module",
             "homepage": "https://drupal.org/project/mollom",
             "keywords": [
                 "acquia",
                 "mollom",
                 "spam"
             ],
-            "time": "2015-11-24T18:21:23+00:00"
+            "support": {
+                "source": "http://cgit.drupalcode.org/mollom"
+            }
         },
         {
             "name": "drupal/paragraphs",
@@ -1667,7 +1705,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://ftp.drupal.org/files/projects/paragraphs-8.x-1.1.zip",
-                "reference": null,
+                "reference": "8.x-1.1",
                 "shasum": "c678e5704a98c6a0549e415412da081cfeb03a00"
             },
             "require": {
@@ -1735,7 +1773,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://ftp.drupal.org/files/projects/pathauto-8.x-1.0-rc1.zip",
-                "reference": null,
+                "reference": "8.x-1.0-rc1",
                 "shasum": "2460339ac8739317b3c4e66e9ce7142cc02adac3"
             },
             "require": {
@@ -1823,7 +1861,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://ftp.drupal.org/files/projects/token-8.x-1.0-rc1.zip",
-                "reference": null,
+                "reference": "8.x-1.0-rc1",
                 "shasum": "204b2f18a3d770589d66656aa83121d2156d0a31"
             },
             "require": {
@@ -1878,34 +1916,45 @@
         },
         {
             "name": "drupal/writer",
-            "version": "8.2.2-rc1",
+            "version": "2.2.0-rc2",
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/writer",
-                "reference": "c01245e4020e0d88ab5e7a7071f26f17fd7fc1e8"
+                "reference": "8.x-2.2-rc2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/writer-8.x-2.2-rc1.zip",
-                "reference": "c01245e4020e0d88ab5e7a7071f26f17fd7fc1e8",
-                "shasum": null
+                "url": "https://ftp.drupal.org/files/projects/writer-8.x-2.2-rc2.zip",
+                "reference": null,
+                "shasum": "c2a0ccc2018e2a1b22b3822c74fabf119ede5812"
             },
             "require": {
-                "drupal/core": "8.*"
+                "drupal/core": "~8.0"
             },
             "type": "drupal-theme",
             "extra": {
                 "branch-alias": {
-                    "dev-8.x-2.x": "8.2.x-dev"
+                    "dev-2.x": "2.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-2.2-rc2",
+                    "datestamp": "1481303883"
                 }
             },
-            "notification-url": "https://packagist.drupal-composer.org/downloads/",
+            "notification-url": "https://packages.drupal.org/8/downloads",
             "license": [
                 "GPL-2.0+"
             ],
-            "description": "A minimalist theme designed for a developer's personal blog.",
+            "authors": [
+                {
+                    "name": "bryanbraun",
+                    "homepage": "https://www.drupal.org/user/1410008"
+                }
+            ],
             "homepage": "https://www.drupal.org/project/writer",
-            "time": "2016-02-20T06:21:48+00:00"
+            "support": {
+                "source": "http://cgit.drupalcode.org/writer"
+            }
         },
         {
             "name": "drupal/xmlsitemap",
@@ -6606,6 +6655,7 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
+        "drupal/writer": 5,
         "drupal/disqus": 5,
         "drupal/token": 10,
         "drupal/pathauto": 10,
