@@ -36,7 +36,8 @@
         "drupal/google_analytics": "8.*",
         "drupal/admin_toolbar": "^1.18",
         "drupal/browsersync": "^1.0@beta",
-        "drupal/paragraphs": "^1.0"
+        "drupal/paragraphs": "^1.0",
+        "drupal/memcache": "^2.0@alpha"
     },
     "require-dev": {
        "behat/mink": "~1.7",
