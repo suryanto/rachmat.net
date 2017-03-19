@@ -52,11 +52,11 @@
 @import url('https://fonts.googleapis.com/css?family=Lato:400,700');
 
 html, body, #main-canvas-wrapper, #main-canvas {
-    height: 100%;
+  height: 100%;
 }
 
 body {
-  font-family: 'Merriweather','Palatino Linotype','Book Antiqua',Palatino,serif;
+  font-family: 'Merriweather', 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
   background: #ebebeb;
 }
 
@@ -68,9 +68,10 @@ body {
 }
 
 .cover-overlay {
-    height: inherit;
-    background: rgba(69,127,202,0.9);
-    background: linear-gradient(to left, rgba(0, 92, 151, 0.9) 0%, rgba(54, 54, 149, 0.85) 100%);
+  height: inherit;
+  background: rgba(69, 127, 202, 0.9);
+  background: linear-gradient(to left, rgba(0, 92, 151, 0.9) 0%, rgba(54, 54, 149, 0.85) 100%);
+  min-height: 700px;
 }
 
 header {
@@ -78,7 +79,7 @@ header {
     margin-top: 6.25rem;
     color: #FFFFFF;
     font-weight: 600;
-    font-family: 'Lato',Helvetica,sans-serif;
+    font-family: 'Lato', Helvetica, sans-serif;
     font-size: 48px;
     @include breakpoint(medium down) {
       font-size: 30px;
@@ -88,7 +89,7 @@ header {
     color: #fff;
     font-size: 30px;
     padding-bottom: 20px;
-    font-family: 'Lato',Helvetica,sans-serif;
+    font-family: 'Lato', Helvetica, sans-serif;
     @include breakpoint(medium down) {
       font-size: 20px;
     }
@@ -96,7 +97,7 @@ header {
   p {
     font-size: 20px;
     color: #fff;
-    font-family: 'Lato',Helvetica,sans-serif;
+    font-family: 'Lato', Helvetica, sans-serif;
     @include breakpoint(medium down) {
       font-size: 16px;
     }
@@ -104,30 +105,31 @@ header {
 }
 
 .button.ghost {
-	margin-bottom: 0;
-	background-color: transparent;
-	border: 1px solid #34495e;
-	border-radius: 5px;
-	padding:0.5rem 1.5rem;
-	transition: all 0.3 ease-out;
-	color: #34495e;
+  margin-bottom: 0;
+  background-color: transparent;
+  border: 1px solid #34495e;
+  border-radius: 5px;
+  padding: 0.5rem 1.5rem;
+  transition: all 0.3 ease-out;
+  color: #34495e;
   font-size: 20px;
   margin: 20px 0;
   text-transform: uppercase;
-  &:hover{
-		background-color:#34495e;
-		color: #fff;
-		transition: 0.2 ease;
-	}
+  &:hover {
+    background-color: #34495e;
+    color: #fff;
+    transition: 0.2 ease;
+  }
 }
+
 .cover {
   .button.ghost {
     border: 1px solid #fff;
     color: #fff;
-    &:hover{
-  		background-color:#fff;
-  		color: #34495e;
-  	}
+    &:hover {
+      background-color: #fff;
+      color: #34495e;
+    }
   }
 }
 
@@ -193,7 +195,7 @@ ul.menu.dropdown {
     vertical-align: middle;
     padding: 0;
     font-size: 18px;
-    font-family: 'Lato',Helvetica,sans-serif;
+    font-family: 'Lato', Helvetica, sans-serif;
   }
   a.is-active {
     color: #bebebe;
@@ -244,7 +246,7 @@ ul.menu.dropdown {
   .writer-date {
     color: #888888;
     display: block;
-    font-family: 'Lato',Helvetica,sans-serif;
+    font-family: 'Lato', Helvetica, sans-serif;
     font-weight: 700;
     font-size: 20px;
     line-height: 1.2em;
@@ -319,7 +321,7 @@ nav.tabs {
 }
 
 .button {
-  font-family: 'Lato',Helvetica,sans-serif;
+  font-family: 'Lato', Helvetica, sans-serif;
 }
 
 .page {
