@@ -83,13 +83,14 @@
 
     <div class="container" id="homepage-content">
 
-      {{ page.highlighted }}
-
-      {{ page.help }}
 
 
       <main role="main" class="row">
         <a id="main-content" tabindex="-1"></a>{# link is in html.html.twig #}
+
+        {{ page.highlighted }}
+
+        {{ page.help }}
 
         <div
           class="layout-content{% if page.sidebar_second %} col-sm-8{% endif %}">
