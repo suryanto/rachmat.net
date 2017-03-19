@@ -162,7 +162,7 @@ header {
 
 #homepage-content {
   background-color: #ebebeb;
-  padding: 100px 0;
+  padding: 40px 0;
   h2 {
     font-size: 38px;
     color: #1a272e;
@@ -219,8 +219,12 @@ ul.menu.dropdown {
   }
 }
 
-.view-frontpage {
+.view-frontpage,
+.view-blog {
   padding: 0 0 0 180px;
+  .views-row {
+    position: relative;
+  }
 }
 
 .writer-date {
