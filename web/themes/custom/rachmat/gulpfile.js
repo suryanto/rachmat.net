@@ -21,7 +21,7 @@ gulp.task('sass', function() {
     .pipe($.autoprefixer({
       browsers: ['last 2 versions', 'ie >= 9']
     }))
-    .pipe(sourcemaps.write())
+    //.pipe(sourcemaps.write())
     .pipe(gulp.dest('css'))
     .pipe(browserSync.reload({stream:true}));
 });
