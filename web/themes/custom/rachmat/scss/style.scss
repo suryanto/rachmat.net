@@ -245,3 +245,47 @@ ul.menu.dropdown {
 .view-blog {
   padding-left: 180px;
 }
+
+nav.tabs {
+  background: none;
+  border: none;
+
+  ul.tabs {
+    margin-bottom: 20px;
+    border: none;
+    border-bottom: 1px solid #ddd;
+    a {
+      font-size: 16px;
+      margin-bottom: -1px;
+      border-radius: 4px 4px 0 0;
+      margin-right: 2px;
+    }
+    li {
+      margin-right: 0;
+
+    }
+    &.primary {
+      background: #ebebeb;
+      a {
+        color: #000;
+      }
+      a:hover {
+        color: #fff;
+      }
+    }
+    a.is-active {
+      background: #ebebeb;
+      color: #000;
+      border: 1px solid #ddd;
+      border-bottom: none;
+      border-radius: 4px 4px 0 0;
+    }
+    a.is-active:hover {
+      color: #000;
+    }
+  }
+}
+
+.top-bar {
+  padding: 15px 0;
+}

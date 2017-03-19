@@ -1,12 +1,8 @@
-(function ($, Drupal) {
-  Drupal.behaviors.myModuleBehavior = {
-    attach: function (context, settings) {
-
-      $(context).foundation();
+jQuery(document).ready(function($){
+      $('body').foundation();
 
       // smooth scroll for video anchor
-      $('#homepage-bottom-link', context).bind('tap', function (e) {
-
+      $('#homepage-bottom-link', 'body').bind('tap', function (e) {
         var $target = $($(this).attr('href'));
 
         $('html, body').animate({
@@ -25,6 +21,4 @@
         });
       }
 
-    }
-  };
-})(jQuery, Drupal);
+});
