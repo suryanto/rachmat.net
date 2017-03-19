@@ -91,24 +91,13 @@
   {{ title_suffix }}
 
   {% if display_submitted %}
-    <footer class="node__meta clearfix">
-      {{ author_picture }}
-      <div{{ author_attributes.addClass('node__submitted') }}>
-        {% set createdDate = node.getCreatedTime|date('j F Y') %}
-        {% trans %}Submitted by {{ author_name }} on {{ createdDate }}{% endtrans %}
-        {{ metadata }}
-      </div>
-    </footer>
+    <div class="meta">
+      <time class="submitted writer-date" datetime="{{ date_time }}" pubdate="pubdate">{{clean_date }}</time>
+    </div>
   {% endif %}
 
   <div{{ content_attributes.addClass('node__content') }}>
     {{ content }}
-  </div>
-
-  <div class="social-likes">
-      <div data-service="facebook" title="Share link on Facebook">Facebook</div>
-      <div data-service="twitter" title="Share link on Twitter">Twitter</div>
-      <div data-service="plusone" title="Share link on Google+">Google+</div>
   </div>
 
 </article>

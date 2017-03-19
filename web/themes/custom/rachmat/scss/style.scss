@@ -79,17 +79,27 @@ header {
     color: #FFFFFF;
     font-weight: 600;
     font-family: 'Lato',Helvetica,sans-serif;
+    font-size: 48px;
+    @include breakpoint(medium down) {
+      font-size: 30px;
+    }
   }
   h2 {
     color: #fff;
     font-size: 30px;
     padding-bottom: 20px;
     font-family: 'Lato',Helvetica,sans-serif;
+    @include breakpoint(medium down) {
+      font-size: 20px;
+    }
   }
   p {
     font-size: 20px;
     color: #fff;
     font-family: 'Lato',Helvetica,sans-serif;
+    @include breakpoint(medium down) {
+      font-size: 16px;
+    }
   }
 }
 
@@ -221,29 +231,42 @@ ul.menu.dropdown {
 
 .view-frontpage,
 .view-blog {
-  padding: 0 0 0 180px;
+  @include breakpoint(medium up) {
+    padding: 0 0 0 180px;
+  }
   .views-row {
     position: relative;
   }
 }
 
-.writer-date {
-  color: #888888;
-  display: block;
-  font-family: 'Lato',Helvetica,sans-serif;
-  font-weight: 700;
-  font-size: 20px;
-  left: -190px;
-  line-height: 1.2em;
-  position: absolute;
-  text-align: right;
-  text-transform: uppercase;
-  top: 18px;
-  width: 150px;
+.view-frontpage,
+.view-blog {
+  .writer-date {
+    color: #888888;
+    display: block;
+    font-family: 'Lato',Helvetica,sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.2em;
+    text-transform: uppercase;
+    @include breakpoint(medium up) {
+      position: absolute;
+      left: -190px;
+      top: 18px;
+      width: 150px;
+      text-align: right;
+    }
+  }
+}
+
+.node--type-article .writer-date {
+  margin-bottom: 20px;
 }
 
 .view-blog {
-  padding-left: 180px;
+  @include breakpoint(medium up) {
+    padding-left: 180px;
+  }
 }
 
 nav.tabs {
@@ -288,4 +311,19 @@ nav.tabs {
 
 .top-bar {
   padding: 15px 0;
+  .top-bar-left {
+    @include breakpoint(medium down) {
+      padding-left: 10px;
+    }
+  }
+}
+
+.button {
+  font-family: 'Lato',Helvetica,sans-serif;
+}
+
+.page {
+  @include breakpoint(medium down) {
+    padding: 0 10px;
+  }
 }
