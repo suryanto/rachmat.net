@@ -70,16 +70,14 @@
  *   in different view modes.
  */
 #}
-{%
-  set classes = [
-    'node',
-    'node--type-' ~ node.bundle|clean_class,
-    node.isPromoted() ? 'node--promoted',
-    node.isSticky() ? 'node--sticky',
-    not node.isPublished() ? 'node--unpublished',
-    view_mode ? 'node--view-mode-' ~ view_mode|clean_class,
-  ]
-%}
+{% set classes = [
+'node',
+'node--type-' ~ node.bundle|clean_class,
+node.isPromoted() ? 'node--promoted',
+node.isSticky() ? 'node--sticky',
+not node.isPublished() ? 'node--unpublished',
+view_mode ? 'node--view-mode-' ~ view_mode|clean_class,
+] %}
 {{ attach_library('classy/node') }}
 <article{{ attributes.addClass(classes) }}>
 
@@ -92,15 +90,11 @@
   {{ title_suffix }}
 
   {% if display_submitted %}
-    <footer class="node__meta clearfix">
-      {{ author_picture }}
-      <div{{ author_attributes.addClass('node__submitted') }}>
-        {% set createdDate = node.getCreatedTime|date('j F Y') %}
-        {% trans %}Submitted by {{ author_name }} on {{ createdDate }}{% endtrans %}
-        {{ metadata }}
-      </div>
-    </footer>
+    <div class="meta">
+      <time class="submitted writer-date" datetime="{{ date_time }}" pubdate="pubdate">{{ clean_date }}</time>
+    </div>
   {% endif %}
+
 
   <div{{ content_attributes.addClass('node__content') }}>
     {{ content }}

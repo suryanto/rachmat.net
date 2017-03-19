@@ -56,7 +56,7 @@ html, body, #main-canvas-wrapper, #main-canvas {
 }
 
 body {
-  font-family: 'Lato', sans-serif;
+  font-family: 'Merriweather','Palatino Linotype','Book Antiqua',Palatino,serif;
 }
 
 .cover {
@@ -69,7 +69,7 @@ body {
 .cover-overlay {
     height: inherit;
     background: rgba(69,127,202,0.9);
-    background: linear-gradient(to left, rgba(0, 92, 151, 0.9) 0%, rgba(54, 54, 149, 0.9) 100%);
+    background: linear-gradient(to left, rgba(0, 92, 151, 0.9) 0%, rgba(54, 54, 149, 0.85) 100%);
 }
 
 header {
@@ -77,15 +77,18 @@ header {
     margin-top: 6.25rem;
     color: #FFFFFF;
     font-weight: 600;
+    font-family: 'Lato',Helvetica,sans-serif;
   }
   h2 {
     color: #fff;
     font-size: 30px;
     padding-bottom: 20px;
+    font-family: 'Lato',Helvetica,sans-serif;
   }
   p {
     font-size: 20px;
     color: #fff;
+    font-family: 'Lato',Helvetica,sans-serif;
   }
 }
 
@@ -160,9 +163,10 @@ header {
   background-color: #ebebeb;
   padding: 100px 0;
   h2 {
-    font-size: 30px;
+    font-size: 38px;
     color: #1a272e;
     margin-bottom: 30px;
+    margin-top: 30px;
   }
 }
 
@@ -178,6 +182,7 @@ ul.menu.dropdown {
     vertical-align: middle;
     padding: 0;
     font-size: 18px;
+    font-family: 'Lato',Helvetica,sans-serif;
   }
   a.is-active {
     color: #bebebe;
@@ -211,4 +216,27 @@ ul.menu.dropdown {
     right: 0;
     width: 50%;
   }
+}
+
+.view-frontpage {
+  padding: 0 0 0 180px;
+}
+
+.writer-date {
+  color: #888888;
+  display: block;
+  font-family: 'Lato',Helvetica,sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  left: -190px;
+  line-height: 1.2em;
+  position: absolute;
+  text-align: right;
+  text-transform: uppercase;
+  top: 18px;
+  width: 150px;
+}
+
+.view-blog {
+  padding-left: 180px;
 }

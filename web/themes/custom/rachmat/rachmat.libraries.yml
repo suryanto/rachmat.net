@@ -6,7 +6,8 @@ global-styling:
   js:
     bower_components/foundation-sites/dist/js/foundation.min.js: {}
     bower_components/jquery.stellar/jquery.stellar.min.js: {}
+    js/tappy.js: {}
     js/script.js: {}
   dependencies:
     - core/jquery
-    
+
