@@ -192,10 +192,15 @@ header {
 }
 
 ul.menu.dropdown {
+  margin-left: 0;
+  @include breakpoint(medium down) {
+    text-align: center;
+    margin-top: 10px;
+  }
   li {
     display: inline-block;
     line-height: 30px;
-    margin-left: 20px;
+    margin: 0 10px;
   }
   a {
     display: inline-block;
@@ -324,7 +329,7 @@ nav.tabs {
   padding: 15px 0;
   .top-bar-left {
     @include breakpoint(medium down) {
-      padding-left: 10px;
+      text-align: center;
     }
   }
 }
