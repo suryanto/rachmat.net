@@ -170,6 +170,9 @@ header {
     font-size: 40px;
     display: inline-block;
   }
+  @include breakpoint(small only) {
+    display: none;
+  }
 }
 
 #homepage-content {
