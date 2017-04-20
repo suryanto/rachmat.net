@@ -38,7 +38,9 @@
         "drupal/browsersync": "^1.0@beta",
         "drupal/paragraphs": "^1.0",
         "drupal/memcache": "^2.0@alpha",
-        "drupal/smtp": "^1.0@beta"
+        "drupal/smtp": "^1.0@beta",
+        "faizshukri/phpquran": "^0.5.1",
+        "drupal/devel": "^1.0@RC"
     },
     "require-dev": {
        "behat/mink": "~1.7",

@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "c20c8e422a9bc961a48c5db285eca712",
+    "content-hash": "90306a90cd7ae33865528cc22d99c2f5",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -82,11 +82,11 @@
         },
         {
             "name": "asm89/stack-cors",
-            "version": "1.0.0",
+            "version": "1.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/asm89/stack-cors.git",
-                "reference": "3ae8ef219bb4c9a6caf857421719aa07fa7776cc",
+                "reference": "65ccbd455370f043c2e3b93482a3813603d68731",
                 "mirrors": [
                     {
                         "url": "git@toran.dev:/Users/suryanto/Sites/toran/%package%/%normalizedUrl%.%type%",
@@ -96,8 +96,8 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/asm89/stack-cors/zipball/3ae8ef219bb4c9a6caf857421719aa07fa7776cc",
-                "reference": "3ae8ef219bb4c9a6caf857421719aa07fa7776cc",
+                "url": "https://api.github.com/repos/asm89/stack-cors/zipball/65ccbd455370f043c2e3b93482a3813603d68731",
+                "reference": "65ccbd455370f043c2e3b93482a3813603d68731",
                 "shasum": "",
                 "mirrors": [
                     {
@@ -107,14 +107,23 @@
                 ]
             },
             "require": {
-                "php": ">=5.3.2",
-                "symfony/http-foundation": "~2.1|~3.0",
-                "symfony/http-kernel": "~2.1|~3.0"
+                "php": ">=5.5.9",
+                "symfony/http-foundation": "~2.7|~3.0",
+                "symfony/http-kernel": "~2.7|~3.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^5.0 || ^4.8.10",
+                "squizlabs/php_codesniffer": "^2.3"
             },
             "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.1-dev"
+                }
+            },
             "autoload": {
-                "psr-0": {
-                    "Asm89\\Stack": "src/"
+                "psr-4": {
+                    "Asm89\\Stack\\": "src/Asm89/Stack/"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -133,7 +142,7 @@
                 "cors",
                 "stack"
             ],
-            "time": "2016-08-01T12:05:04+00:00"
+            "time": "2017-04-11T20:03:41+00:00"
         },
         {
             "name": "composer/installers",
@@ -1122,17 +1131,17 @@
         },
         {
             "name": "drupal/admin_toolbar",
-            "version": "1.18.0",
+            "version": "1.19.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/admin_toolbar",
-                "reference": "8.x-1.18"
+                "reference": "8.x-1.19"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/admin_toolbar-8.x-1.18.zip",
-                "reference": "8.x-1.18",
-                "shasum": "ea5b6b5eb20757fda12e7220819a750e2575359b"
+                "url": "https://ftp.drupal.org/files/projects/admin_toolbar-8.x-1.19.zip",
+                "reference": "8.x-1.19",
+                "shasum": "87de41eab3c5cd49d4e1b5b764cb3b9d5ad683a0"
             },
             "require": {
                 "drupal/core": "*"
@@ -1143,8 +1152,8 @@
                     "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.18",
-                    "datestamp": "1480614184"
+                    "version": "8.x-1.19",
+                    "datestamp": "1491487683"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
@@ -1326,11 +1335,11 @@
         },
         {
             "name": "drupal/core",
-            "version": "8.3.0",
+            "version": "8.3.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupal-composer/drupal-core.git",
-                "reference": "e503a252ec5c2811abed6af0c7b70afda8e93a3f",
+                "reference": "53326f9503e5e9e406fab22e4fbae6ddb706f7be",
                 "mirrors": [
                     {
                         "url": "git@toran.dev:/Users/suryanto/Sites/toran/%package%/%normalizedUrl%.%type%",
@@ -1340,8 +1349,8 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drupal-composer/drupal-core/zipball/e503a252ec5c2811abed6af0c7b70afda8e93a3f",
-                "reference": "e503a252ec5c2811abed6af0c7b70afda8e93a3f",
+                "url": "https://api.github.com/repos/drupal-composer/drupal-core/zipball/53326f9503e5e9e406fab22e4fbae6ddb706f7be",
+                "reference": "53326f9503e5e9e406fab22e4fbae6ddb706f7be",
                 "shasum": "",
                 "mirrors": [
                     {
@@ -1516,21 +1525,21 @@
                 "GPL-2.0+"
             ],
             "description": "Drupal is an open source content management platform powering millions of websites and applications.",
-            "time": "2017-04-06T00:12:44+00:00"
+            "time": "2017-04-19T16:07:22+00:00"
         },
         {
             "name": "drupal/ctools",
-            "version": "3.0.0-beta1",
+            "version": "3.0.0-beta2",
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/ctools",
-                "reference": "8.x-3.0-beta1"
+                "reference": "8.x-3.0-beta2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/ctools-8.x-3.0-beta1.zip",
+                "url": "https://ftp.drupal.org/files/projects/ctools-8.x-3.0-beta2.zip",
                 "reference": null,
-                "shasum": "8798ba7640a9188df9f9043e6f49b5ff0252e3dc"
+                "shasum": "6deece503cca328dde9b573a5d8a8fc74798d284"
             },
             "require": {
                 "drupal/core": "~8.0"
@@ -1541,8 +1550,8 @@
                     "dev-3.x": "3.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-3.0-beta1",
-                    "datestamp": "1490677984"
+                    "version": "8.x-3.0-beta2",
+                    "datestamp": "1492545842"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
@@ -1601,6 +1610,96 @@
             "support": {
                 "source": "http://cgit.drupalcode.org/ctools",
                 "issues": "https://www.drupal.org/project/issues/ctools"
+            }
+        },
+        {
+            "name": "drupal/devel",
+            "version": "1.0.0-rc1",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/devel",
+                "reference": "8.x-1.0-rc1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/devel-8.x-1.0-rc1.zip",
+                "reference": null,
+                "shasum": "04a01f50d508eca70e065b7eba38cd6c83a436c0"
+            },
+            "require": {
+                "drupal/core": "~8.0"
+            },
+            "suggest": {
+                "symfony/var-dumper": "Pretty print complex values better with var-dumper available"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.0-rc1",
+                    "datestamp": "1484837884"
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Moshe Weitzman",
+                    "homepage": "https://github.com/weitzman",
+                    "email": "weitzman@tejasa.com",
+                    "role": "Maintainer"
+                },
+                {
+                    "name": "Hans Salvisberg",
+                    "homepage": "https://www.drupal.org/u/salvis",
+                    "email": "drupal@salvisberg.com",
+                    "role": "Maintainer"
+                },
+                {
+                    "name": "Luca Lusso",
+                    "homepage": "https://www.drupal.org/u/lussoluca",
+                    "role": "Maintainer"
+                },
+                {
+                    "name": "Marco (willzyx)",
+                    "homepage": "https://www.drupal.org/u/willzyx",
+                    "role": "Maintainer"
+                },
+                {
+                    "name": "See contributors",
+                    "homepage": "https://www.drupal.org/node/3236/committers"
+                },
+                {
+                    "name": "moshe weitzman",
+                    "homepage": "https://www.drupal.org/user/23"
+                },
+                {
+                    "name": "pcambra",
+                    "homepage": "https://www.drupal.org/user/122101"
+                },
+                {
+                    "name": "salvis",
+                    "homepage": "https://www.drupal.org/user/82964"
+                },
+                {
+                    "name": "willzyx",
+                    "homepage": "https://www.drupal.org/user/1043862"
+                },
+                {
+                    "name": "yched",
+                    "homepage": "https://www.drupal.org/user/39567"
+                }
+            ],
+            "description": "Various blocks, pages, and functions for developers.",
+            "homepage": "http://drupal.org/project/devel",
+            "support": {
+                "source": "http://cgit.drupalcode.org/devel",
+                "issues": "http://drupal.org/project/devel",
+                "irc": "irc://irc.freenode.org/drupal-contribute"
             }
         },
         {
@@ -1822,17 +1921,17 @@
         },
         {
             "name": "drupal/memcache",
-            "version": "2.0.0-alpha2",
+            "version": "2.0.0-alpha3",
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/memcache",
-                "reference": "8.x-2.0-alpha2"
+                "reference": "8.x-2.0-alpha3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/memcache-8.x-2.0-alpha2.zip",
-                "reference": "8.x-2.0-alpha2",
-                "shasum": "dedad417e274e06a064e282135ce2f05b2c2c6ba"
+                "url": "https://ftp.drupal.org/files/projects/memcache-8.x-2.0-alpha3.zip",
+                "reference": null,
+                "shasum": "21db65a220e2a71227fa7a88f4033559fec5c9ff"
             },
             "require": {
                 "drupal/core": "~8.0"
@@ -1843,8 +1942,8 @@
                     "dev-2.x": "2.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-2.0-alpha2",
-                    "datestamp": "1473758939"
+                    "version": "8.x-2.0-alpha3",
+                    "datestamp": "1492523944"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
@@ -1874,9 +1973,10 @@
                 }
             ],
             "description": "High performance integration with memcache.",
-            "homepage": "https://www.drupal.org/project/memcache",
+            "homepage": "http://drupal.org/project/memcache",
             "support": {
-                "source": "http://cgit.drupalcode.org/memcache"
+                "source": "http://cgit.drupalcode.org/memcache",
+                "issues": "https://www.drupal.org/project/issues/memcache"
             }
         },
         {
@@ -2186,7 +2286,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://ftp.drupal.org/files/projects/smtp-8.x-1.0-beta2.zip",
-                "reference": null,
+                "reference": "8.x-1.0-beta2",
                 "shasum": "d6c3890dca35264f6f39647527c2e203e9c445bc"
             },
             "require": {
@@ -2633,6 +2733,73 @@
                 "validator"
             ],
             "time": "2017-02-03T22:48:59+00:00"
+        },
+        {
+            "name": "faizshukri/phpquran",
+            "version": "v0.5.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/faizshukri/phpquran.git",
+                "reference": "2b75e807ce58e9832f98a5ece66acdd1956428a4",
+                "mirrors": [
+                    {
+                        "url": "git@toran.dev:/Users/suryanto/Sites/toran/%package%/%normalizedUrl%.%type%",
+                        "preferred": true
+                    }
+                ]
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/faizshukri/phpquran/zipball/2b75e807ce58e9832f98a5ece66acdd1956428a4",
+                "reference": "2b75e807ce58e9832f98a5ece66acdd1956428a4",
+                "shasum": "",
+                "mirrors": [
+                    {
+                        "url": "http://toran.dev/repo/packagist/dists/%package%/%version%/%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
+            },
+            "require": {
+                "guzzlehttp/guzzle": "^6.1|^5.3",
+                "php": ">=5.5.0",
+                "symfony/console": "^3.0|^2.8"
+            },
+            "require-dev": {
+                "mockery/mockery": "^0.9.4",
+                "phpunit/phpunit": "^4.8",
+                "symfony/process": "^3.0|^2.8",
+                "symfony/var-dumper": "^3.0|^2.8",
+                "symfony/yaml": "^3.0|^2.8"
+            },
+            "bin": [
+                "bin/quran"
+            ],
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "FaizShukri\\Quran\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Faiz Shukri",
+                    "email": "faizshukri90@gmail.com"
+                }
+            ],
+            "description": "Complete PHP Quran Resource",
+            "keywords": [
+                "al-quran",
+                "islam",
+                "kitab",
+                "muslim",
+                "quran"
+            ],
+            "time": "2016-06-19T10:14:13+00:00"
         },
         {
             "name": "gabordemooij/redbean",
@@ -3411,7 +3578,7 @@
             "version": "1.0.4",
             "source": {
                 "type": "git",
-                "url": "https://github.com/padraic/file_get_contents.git",
+                "url": "https://github.com/humbug/file_get_contents.git",
                 "reference": "66797199019d0cb4529cb8d29c6f0b4c5085b53a",
                 "mirrors": [
                     {
@@ -3422,7 +3589,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/padraic/file_get_contents/zipball/66797199019d0cb4529cb8d29c6f0b4c5085b53a",
+                "url": "https://api.github.com/repos/humbug/file_get_contents/zipball/66797199019d0cb4529cb8d29c6f0b4c5085b53a",
                 "reference": "66797199019d0cb4529cb8d29c6f0b4c5085b53a",
                 "shasum": "",
                 "mirrors": [
@@ -3480,7 +3647,7 @@
             "version": "1.0.3",
             "source": {
                 "type": "git",
-                "url": "https://github.com/padraic/phar-updater.git",
+                "url": "https://github.com/humbug/phar-updater.git",
                 "reference": "c17eeb3887dc4269d1b4837dc875d39e9f8149a8",
                 "mirrors": [
                     {
@@ -3491,7 +3658,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/padraic/phar-updater/zipball/c17eeb3887dc4269d1b4837dc875d39e9f8149a8",
+                "url": "https://api.github.com/repos/humbug/phar-updater/zipball/c17eeb3887dc4269d1b4837dc875d39e9f8149a8",
                 "reference": "c17eeb3887dc4269d1b4837dc875d39e9f8149a8",
                 "shasum": "",
                 "mirrors": [
@@ -6007,11 +6174,11 @@
         },
         {
             "name": "twig/twig",
-            "version": "v1.33.0",
+            "version": "v1.33.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/twigphp/Twig.git",
-                "reference": "05cf49921b13f6f01d3cfdf9018cfa7a8086fd5a",
+                "reference": "a87f959f4b691da66aada267a2dfdb260d0bb58a",
                 "mirrors": [
                     {
                         "url": "git@toran.dev:/Users/suryanto/Sites/toran/%package%/%normalizedUrl%.%type%",
@@ -6021,8 +6188,8 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/twigphp/Twig/zipball/05cf49921b13f6f01d3cfdf9018cfa7a8086fd5a",
-                "reference": "05cf49921b13f6f01d3cfdf9018cfa7a8086fd5a",
+                "url": "https://api.github.com/repos/twigphp/Twig/zipball/a87f959f4b691da66aada267a2dfdb260d0bb58a",
+                "reference": "a87f959f4b691da66aada267a2dfdb260d0bb58a",
                 "shasum": "",
                 "mirrors": [
                     {
@@ -6077,7 +6244,7 @@
             "keywords": [
                 "templating"
             ],
-            "time": "2017-03-22T15:40:09+00:00"
+            "time": "2017-04-18T21:43:11+00:00"
         },
         {
             "name": "webmozart/assert",
@@ -6201,11 +6368,11 @@
         },
         {
             "name": "zendframework/zend-diactoros",
-            "version": "1.3.10",
+            "version": "1.4.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/zendframework/zend-diactoros.git",
-                "reference": "83e8d98b9915de76c659ce27d683c02a0f99fa90",
+                "reference": "b03f285a333f51e58c95cce54109a4a9ed691436",
                 "mirrors": [
                     {
                         "url": "git@toran.dev:/Users/suryanto/Sites/toran/%package%/%normalizedUrl%.%type%",
@@ -6215,8 +6382,8 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/zendframework/zend-diactoros/zipball/83e8d98b9915de76c659ce27d683c02a0f99fa90",
-                "reference": "83e8d98b9915de76c659ce27d683c02a0f99fa90",
+                "url": "https://api.github.com/repos/zendframework/zend-diactoros/zipball/b03f285a333f51e58c95cce54109a4a9ed691436",
+                "reference": "b03f285a333f51e58c95cce54109a4a9ed691436",
                 "shasum": "",
                 "mirrors": [
                     {
@@ -6230,17 +6397,19 @@
                 "psr/http-message": "~1.0"
             },
             "provide": {
-                "psr/http-message-implementation": "~1.0.0"
+                "psr/http-message-implementation": "1.0"
             },
             "require-dev": {
+                "ext-dom": "*",
+                "ext-libxml": "*",
                 "phpunit/phpunit": "^4.6 || ^5.5",
                 "zendframework/zend-coding-standard": "~1.0.0"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.3-dev",
-                    "dev-develop": "1.4-dev"
+                    "dev-master": "1.4-dev",
+                    "dev-develop": "1.5-dev"
                 }
             },
             "autoload": {
@@ -6259,7 +6428,7 @@
                 "psr",
                 "psr-7"
             ],
-            "time": "2017-01-23T04:53:24+00:00"
+            "time": "2017-04-06T16:18:34+00:00"
         },
         {
             "name": "zendframework/zend-escaper",
@@ -8049,7 +8218,8 @@
         "drupal/metatag": 10,
         "drupal/browsersync": 10,
         "drupal/memcache": 15,
-        "drupal/smtp": 10
+        "drupal/smtp": 10,
+        "drupal/devel": 5
     },
     "prefer-stable": true,
     "prefer-lowest": false,
