@@ -16,12 +16,14 @@
         }
     ],
     "require": {
-        "composer/installers": "^1.0.20",
-        "drupal-composer/drupal-scaffold": "^2.0.1",
-        "cweagans/composer-patches": "~1.0",
-        "drupal/core": "8.*",
-        "drush/drush": "~8.0",
-        "drupal/console": "~0.10",
+        "composer/installers": "^1.2",
+        "drupal-composer/drupal-scaffold": "^2.2",
+        "cweagans/composer-patches": "^1.6",
+        "drupal/core": "~8.0",
+        "drush/drush": "~9.0",
+        "drupal/console": "^1.0.1",
+        "webflo/drupal-finder": "^1.0.0",
+        "webmozart/path-util": "^2.3",
         "drupal/quran": "8.*",
         "drupal/markdown": "^1.1",
         "michelf/php-markdown": "^1.6",
@@ -40,7 +42,8 @@
         "drupal/memcache": "^2.0@alpha",
         "drupal/smtp": "^1.0@beta",
         "faizshukri/phpquran": "^0.5.1",
-        "drupal/devel": "^1.0@RC"
+        "drupal/devel": "^1.0@RC",
+        "drupal/mobile_detect": "2.x-dev"
     },
     "require-dev": {
        "behat/mink": "~1.7",
@@ -48,7 +51,7 @@
         "jcalderonzumba/gastonjs": "~1.0.2",
         "jcalderonzumba/mink-phantomjs-driver": "~0.3.1",
         "mikey179/vfsStream": "~1.2",
-        "phpunit/phpunit": "~4.8",
+        "phpunit/phpunit": ">=4.8.28 <5",
         "symfony/css-selector": "~2.8"
     },
     "conflict": {
